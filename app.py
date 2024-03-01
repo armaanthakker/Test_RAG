@@ -2,7 +2,7 @@
 #from apikey import apikey
 import openai
 
-openai.api_key = "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"
+openai.api_key = ""
 corpus_of_documents = [
     "Take a leisurely walk in the park and enjoy the fresh air.",
     "Visit a local museum and discover something new.",
