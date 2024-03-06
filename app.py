@@ -1,8 +1,10 @@
 #from corpus_of_documents import corpus_of_documents
 #from apikey import apikey
 import openai
+from langsmith import Client
 
-openai.api_key = ""
+
+openai.api_key = "your-openai-key" #change openai key
 corpus_of_documents = [
     "Take a leisurely walk in the park and enjoy the fresh air.",
     "Visit a local museum and discover something new.",
@@ -46,7 +48,7 @@ def return_response_with_api(query, corpus):
     return response.choices[0].message
 
 
-user_query = "What is one activity?"
+user_query = "What are some outdoor activities?"
 response = return_response_with_api(user_query, corpus_of_documents)
 print(response)
 
